@@ -1,6 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>コンピュータ演習のサンプルページ</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
 <body>
-<h1>hello</h1>
+<h1>コンピュータ演習のサンプルページ</h1>
+<p>HTMLの基本的なタグを使用して作成したページです．</p>
+
+<h2>基本</h2>
+<p>WebページはHTML(HyperText Markup Language)と呼ばれる，
+プログラミング言語のようなもので記述されている．<br />
+つまり，テキストファイルで記述されている．</p>
+
+<p>「<a href="simple.html">超簡単なページの例</a>」のソースは
+次のようになっている．</p>
+
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;ja&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;title&gt;超簡単なページの例&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;H1&gt;見出し&lt;/H1&gt;
+    &lt;p&gt;本文をここに書きます．&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+<h2>タグ</h2>
+HTMLではタグと呼ばれる命令のようなもので表示内容を記述する．<br />
+上の例に色々なタグが登場していた．
+
+<ul>
+  <li>&lt;xxx&gt;</li>
+    要素の開始を表す「開始タグ」
+  <li>&lt;/xxx&gt;</li>
+    要素の終わりを表す「終了タグ」</li>
+  <li>要素</li>
+  &lt;xxx&gt;内容&lt;/xxx&gt;</li>のように記述する．
+  <li>空要素</li>
+  内容を持たない要素もある．<br />
+  &lt;xxx yyy=&quot;zzz&quot; /&gt;のように記述する．<br />
+  上の&lt;meta&gt;や，次の&lt;img&gt;は空要素の例である．
+</ul>
+
+<h2>画像(空要素の例)</h2>
+
+<img src="kuma_mid.svg" />
+<pre>
+&lt;img src=&quot;kuma_mid.svg&quot; /&gt;
+</pre>
+
 </body>
 </html>

@@ -1,5 +1,5 @@
 p {
-  color: red;
+  color: green;
 }
 
 @media screen and (max-width: 767px) {

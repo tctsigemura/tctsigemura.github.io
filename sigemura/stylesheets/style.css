@@ -1,11 +1,52 @@
-p {
-  color: green;
+/* CSSで使用できる属性は https://beginners-hp.com/css-property/ を参考に */
+body {
+  margin: 20px;             /* 表示周囲の余白 */
 }
 
-@media screen and (max-width: 767px) {
- p { font-size: 200%; } 
+h1 {
+  text-align: center;       /* 中央に表示 */
+  color: black;             /* 文字は黒色 */
+  background-color: pink;   /* 背景はピンク */
 }
 
-@media screen and (min-width: 767px) {
- p { font-size: 50%; } 
+ol {
+  color: black;
+  background-color: lightgray;
+  margin: 20px;
+}
+
+table {
+  margin: auto;              /* 表全体を中央に表示する */
+  border-collapse: collapse; /* <td><th>要素間の隙間なし */
+}
+
+th, td {
+  padding: 5px 10px;         /* 余白 上下，左右 */
+}
+
+th {
+  border: 2px solid black;
+  background-color: #00bfff; /* 背景色 */
+}
+
+td {
+  border: 1px solid black;   /* 罫線 */
+}
+
+img{
+  margin: 5px 10px;
+}
+
+.right {                     /* クラス指定 */
+  text-align: right;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.marker {
+  background-color: yellow;
+  display: inline-block;     /* 行全体ではない */
+  padding: 5px;
 }

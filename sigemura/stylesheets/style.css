@@ -10,14 +10,16 @@ h1 {
 }
 
 ol {
-  color: black;
   background-color: lightgray;
-  margin: 20px;
 }
 
 table {
-  margin: auto;              /* 表全体を中央に表示する */
   border-collapse: collapse; /* <td><th>要素間の隙間なし */
+  margin: auto;              /* 表全体を中央に表示する */
+}
+
+thead {
+  background-color: aqua;    /* 背景色 */
 }
 
 th, td {
@@ -26,7 +28,6 @@ th, td {
 
 th {
   border: 2px solid black;
-  background-color: #00bfff; /* 背景色 */
 }
 
 td {
@@ -37,16 +38,7 @@ img{
   margin: 5px 10px;
 }
 
-.right {                     /* クラス指定 */
+.number {                    /* クラス指定 */
   text-align: right;
 }
 
-.bold {
-  font-weight: bold;
-}
-
-.marker {
-  background-color: yellow;
-  display: inline-block;     /* 行全体ではない */
-  padding: 5px;
-}
